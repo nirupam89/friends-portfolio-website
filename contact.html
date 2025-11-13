@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Whole Haus</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">The Whole Haus</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="contact-button">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>Get in Touch</h1>
+        <p class="page-intro">Ready to start your project? Send us a message using the form below, and we'll get back to you to schedule a consultation.</p>
+
+        <div class="contact-container">
+            <form class="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Whole Haus. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
