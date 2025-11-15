@@ -118,3 +118,93 @@ footer {
         font-size: 2.2rem;
     }
 }
+
+/* --- General Page Styles --- */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto; /* Centers the content */
+    padding: 0 5%;
+}
+
+.page-intro {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+/* --- About Us Page --- */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.team-member-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    padding: 2rem;
+    text-align: center;
+}
+
+.team-member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--secondary-color);
+}
+
+.team-member-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.team-member-card h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* --- Contact Form Page --- */
+.contact-form {
+    max-width: 700px;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for padding to work right */
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-form .cta-button:hover {
+    opacity: 0.9;
+}
